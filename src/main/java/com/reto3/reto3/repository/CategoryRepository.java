@@ -13,7 +13,6 @@ public class CategoryRepository {
 
     @Autowired
     private CategoryCrudRepository categoryCrudRepository;
-
     public List<Category> getAll() {
         return (List<Category>) categoryCrudRepository.findAll();
     }
